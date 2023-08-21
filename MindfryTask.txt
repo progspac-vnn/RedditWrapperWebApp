@@ -1,0 +1,41 @@
+Link: https://foamy-friend-4fc.notion.site/Building-a-Reddit-Wrapper-WebApp-04a548eb5b2f41f9ae649555a3b2efff
+
+# Building a Reddit Wrapper WebApp
+
+Your goal is to build a basic web application that fetches articles from a subreddit of your choice using the free Reddit API. The application should use a REST API interface to retrieve the last 10 threads from the selected subreddit and display them on a simple front end.
+
+### Requirements:
+
+### Backend:
+
+- Use Python to create the backend of the web application.
+- Utilize the Reddit API to fetch articles from the chosen subreddit.
+- Expose a REST API endpoint that returns the last 10 threads as JSON data.
+
+### Frontend:
+
+- Create a simple HTML page with basic styling (no need for complex designs).
+- Use JavaScript to fetch data from the REST API endpoint and display the articles on the page.
+
+### Functionality:
+
+- The front end should display the following information for each article: title, author, creation date, and a link to the original thread.
+- Ensure that the application is responsive and functional on different devices.
+
+### Documentation:
+
+- Include a brief explanation of how to run your application.
+- Provide a list of any third-party libraries you used.
+
+### Submission:
+
+Please create a GitHub repository for this task and share the link with us at [ayugarg567@gmail.com](mailto:ayugarg567@gmail.com) Your repository should include the source code, any necessary configuration files, and a README with instructions on how to run the application. Make sure you submit it by August 28, 2023. 
+
+### Evaluation:
+
+We will assess your submission based on the following criteria:
+
+- Code quality and organization
+- API interaction and data retrieval
+
+Feel free to ask any clarifying questions if needed. Good luck, and we're looking forward to seeing your solution!
