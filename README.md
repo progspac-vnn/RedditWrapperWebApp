@@ -5,6 +5,7 @@ The application fetches data using the Reddit API and displays relevant informat
 
 ## Table of Contents
 - [Overview](#overview)
+- [Working](#working)
 - [Features](#features)
 - [Search and Display](#search-and-display)
 - [Installation](#installation)
@@ -15,6 +16,19 @@ The application fetches data using the Reddit API and displays relevant informat
 ## Overview
 This project is a Django web application that utilizes the Reddit API through the `praw` library to retrieve and display the top 10 threads from a specified subreddit. 
 Users can search for a subreddit by entering its name and clicking the search button. The fetched data is presented in a user-friendly format, showing key details of each thread, including titles, authors, content previews, images, and links to the original Reddit posts.
+
+## Working
+# Home Page
+![HomePage](https://github.com/progspac-vnn/RedditWrapperWebApp/assets/83080783/b6a3606a-5288-47ba-9234-4ef206abc161)
+
+# Entered Java as a SubReddit and displayed 10 threads
+![JavaSubReddit](https://github.com/progspac-vnn/RedditWrapperWebApp/assets/83080783/aa9ff795-33ac-4993-aa99-9fbc1fee39c8)
+
+# when Read more is clicked first 100 words of the content is displayed(this can be customized)
+![OnClickingReadMore](https://github.com/progspac-vnn/RedditWrapperWebApp/assets/83080783/73e6dbd8-a815-4dc7-99ed-aafc2969a62b)
+
+# When 'Read on Reddit' is clicked it is redirected to reddit.com where this post is available
+![OnClickRedirectsToRedditWebsite](https://github.com/progspac-vnn/RedditWrapperWebApp/assets/83080783/9a075fe7-b1c3-4caf-88cc-8637ded126dd)
 
 ## Features
 
