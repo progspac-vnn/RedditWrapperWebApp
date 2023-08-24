@@ -6,7 +6,7 @@ The application fetches data using the Reddit API and displays relevant informat
 ## Table of Contents
 - [Overview](#overview)
 - [Features](#features)
-- - [Search and Display](#search-and-display)
+- [Search and Display](#search-and-display)
 - [Installation](#installation)
 - [Usage](#usage)
 - [Dependencies](#dependencies)
