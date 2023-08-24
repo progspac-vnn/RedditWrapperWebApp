@@ -8,37 +8,44 @@ import re
 
 class RedditAPIView(APIView):
     def get(self, request):
-        # API credentials
-        reddit = praw.Reddit(
-            client_id = settings.REDDIT_CLIENT_ID,
-            client_secret = settings.REDDIT_CLIENT_SECRET,
-            username='progspac-vnn',
-            password='Vinesh@2703',
-            user_agent = 'test-api', # app name
-        )
 
-        # Fetch 10 data from reddit
-        subreddit = reddit.subreddit('food')
-        hot_posts = subreddit.hot(limit=10)
+        try:
+            subreddit_name = request.GET.get('subreddit')
+            print("Subreddit Name:", subreddit_name)
+            # API credentials
+            reddit = praw.Reddit(
+                client_id = settings.REDDIT_CLIENT_ID,
+                client_secret = settings.REDDIT_CLIENT_SECRET,
+                username='progspac-vnn',
+                password='Vinesh@2703',
+                user_agent = 'test-api', # app name
+            )
 
-        # Process and serialize the data 
-        serialized_posts = []
+            # Fetch 10 data from reddit
+            subreddit = reddit.subreddit(subreddit_name) if subreddit_name else reddit.subreddit('movies')
+            hot_posts = subreddit.hot(limit=10)
 
-        for post in hot_posts:
-            post_data = {
-                'title': post.title,
-                'author': post.author.name,
-                # 'created_at': created_at,
-                'content': post.selftext,
-                'image_url': post.url if post.url.endswith(('.png', '.jpg', '.jpeg', '.gif')) else None,
-                'video_url': None
-            }
+            # Process and serialize the data 
+            serialized_posts = []
 
-            if post.media and 'reddit_video' in post.media:
-                post_data['video_url'] = post.media['reddit_video']['fallback_url']
+            for post in hot_posts:
+                post_data = {
+                    'title': post.title,
+                    'author': post.author.name,
+                    # 'created_at': created_at,
+                    'content': post.selftext,
+                    'image_url': post.url if post.url.endswith(('.png', '.jpg', '.jpeg', '.gif')) else None,
+                    'video_url': None,
+                    'post_url': f'https://www.reddit.com{post.permalink}' if post.permalink else None
+                }
 
-            serialized_posts.append(post_data)
+                if post.media and 'reddit_video' in post.media:
+                    post_data['video_url'] = post.media['reddit_video']['fallback_url']
 
-        serializer = RedditSerializer(data=serialized_posts, many=True)
-        serializer.is_valid()
-        return Response(serializer.data, status=status.HTTP_200_OK)
+                serialized_posts.append(post_data)
+
+            serializer = RedditSerializer(data=serialized_posts, many=True)
+            serializer.is_valid()
+            return Response(serializer.data, status=status.HTTP_200_OK)
+        except Exception as e:
+            return Response({'error' : str(e)}, status = status.HTTP_500_INTERNAL_SERVER_ERROR)
