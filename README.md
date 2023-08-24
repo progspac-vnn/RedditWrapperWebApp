@@ -81,5 +81,5 @@ Make sure you have these dependencies installed before running the application.
 For any questions, suggestions, or issues, please feel free to contact the project maintainer:
 - Name: Vinesh Narayan Nadar
 - Email: vineshnnadar@gmail.com
-- GitHub: [YourGitHubUsername](https://github.com/progspac-vnn)
+- GitHub: [My GitHub Profile](https://github.com/progspac-vnn)
 
