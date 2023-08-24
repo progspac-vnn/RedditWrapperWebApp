@@ -79,7 +79,7 @@ Make sure you have these dependencies installed before running the application.
 
 ## Contact
 For any questions, suggestions, or issues, please feel free to contact the project maintainer:
-- Name: Your Name
-- Email: your.email@example.com
-- GitHub: [YourGitHubUsername](https://github.com/YourGitHubUsername)
+- Name: Vinesh Narayan Nadar
+- Email: vineshnnadar@gmail.com
+- GitHub: [YourGitHubUsername](https://github.com/progspac-vnn)
 
