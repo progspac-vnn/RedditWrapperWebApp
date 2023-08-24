@@ -1,3 +1,4 @@
+from datetime import datetime
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status
@@ -32,7 +33,7 @@ class RedditAPIView(APIView):
                 post_data = {
                     'title': post.title,
                     'author': post.author.name,
-                    # 'created_at': created_at,
+                    'created_at': datetime.utcfromtimestamp(post.created_utc).strftime('%Y-%m-%d %H:%M:%S'),  # Format the datetime
                     'content': post.selftext,
                     'image_url': post.url if post.url.endswith(('.png', '.jpg', '.jpeg', '.gif')) else None,
                     'video_url': None,
