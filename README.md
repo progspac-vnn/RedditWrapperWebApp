@@ -95,7 +95,8 @@ The application then displays relevant information for each thread, including:
 3. Enter the name of the subreddit you want to search for in the input field and click the "Search" button.
 4. The top 10 threads from the specified subreddit will be displayed with their relevant information.
 
-## Loading Test
+### Loading Test
+<a id="loading-test"></a>
 Successfully conducted a Loading Test for the designed API using Locust. Results are as follows for # peak concurrency 20 and Spawn Rate 5, RPS -> 10.1 : 
 ![LoadTestingLocust](https://github.com/progspac-vnn/RedditWrapperWebApp/assets/83080783/14201af6-ddee-4d93-996e-8b422d3a0e09)
 
