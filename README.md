@@ -10,6 +10,7 @@ The application fetches data using the Reddit API and displays relevant informat
 - [Search and Display](#search-and-display)
 - [Installation](#installation)
 - [Usage](#usage)
+- [Loading Test](#loading-test)
 - [Dependencies](#dependencies)
 - [Contact](#contact)
 
@@ -31,6 +32,44 @@ Users can search for a subreddit by entering its name and clicking the search bu
 ![OnClickRedirectsToRedditWebsite](https://github.com/progspac-vnn/RedditWrapperWebApp/assets/83080783/9a075fe7-b1c3-4caf-88cc-8637ded126dd)
 
 ## Features
+Reddit WebPage Crawler allows users to effortlessly search for their desired subreddit and instantly access the top 10 hot threads within that subreddit. This feature enables users to explore trending discussions and valuable content from various communities.
+
+# Comprehensive Thread Details
+For each retrieved thread, the application provides a comprehensive set of details to enhance the user experience. These details include:
+
+Thread Title: The title of the thread, grabbing user attention and summarizing the thread's content.
+Author's Username: The username of the thread's author, facilitating identification of content creators.
+Creation Timestamp: The date and time when the thread was created, offering insights into the thread's freshness.
+Content Preview: A snippet of the thread's content, providing users with a concise preview of the thread's topic.
+Read More Option: An interactive "Read More" link that expands the content preview for threads with longer content, allowing users to delve deeper into discussions.
+Original Reddit Post Link: A direct link to the original Reddit post, enabling users to access the entire thread and its associated comments on Reddit's platform.
+Image Display: Inclusion of images if available within the thread, offering a visual element to complement the textual content.
+Intuitive Interaction
+The application's user interface is designed with intuitiveness in mind. Users can effortlessly search for subreddits and retrieve thread information without the need for navigating Reddit's official site. The interactive "Read More" link provides seamless access to extended content, ensuring a smooth and user-friendly browsing experience.
+
+# Visual Representation
+Images associated with threads are visually displayed within the application's interface, enhancing the thread's visual appeal and enriching the browsing experience. This visual representation makes it easier for users to quickly grasp the essence of a thread's content.
+
+# Seamless Integration with Reddit API
+Reddit WebPage Crawler seamlessly integrates with the Reddit API through the praw library. This integration ensures accurate and up-to-date data retrieval, empowering users to stay informed about the latest and most popular discussions within their chosen subreddits.
+
+# Cached Data for Swift Retrieval
+To optimize user experience and expedite search results, Reddit WebPage Crawler employs a caching mechanism. Searched subreddit data is intelligently cached, allowing subsequent searches to retrieve information swiftly without redundant API calls. This caching strategy not only reduces load times but also conserves server resources, ensuring that users receive the latest threads promptly while benefiting from enhanced performance.
+
+By intelligently storing and retrieving data from cache, the application minimizes latency and provides users with a seamless browsing experience. This feature enhances the overall efficiency of the application, making exploration of top threads from various subreddits both swift and effortless.
+
+# Easy Installation and Configuration
+The installation process for Reddit WebPage Crawler is straightforward. The provided instructions guide users through the process of setting up the project, installing dependencies, and configuring Reddit API credentials. This simplicity allows users to quickly set up the application and start exploring top threads.
+
+# Error Handling and Responsiveness
+The application is equipped with robust error handling mechanisms to gracefully manage unexpected scenarios that may arise during data retrieval or user interactions. Additionally, the interface is designed to be responsive, ensuring a consistent and engaging experience across different screen sizes and devices.
+
+# Contact and Feedback
+Reddit WebPage Crawler welcomes user engagement and feedback. The "Contact" section provides users with the means to reach out to the project maintainer, Vinesh Narayan Nadar, for questions, suggestions, or any assistance needed. This proactive approach encourages a sense of community and collaboration.
+
+Feel free to explore the project's functionality and interface, and do not hesitate to reach out if you have any inquiries or suggestions for improvement. Your feedback is highly valued and contributes to the ongoing enhancement of the Reddit WebPage Crawler.
+
+
 
 ### Search and Display
 Users can enter the name of a subreddit in the search box and click the search button to retrieve the top 10 threads from that subreddit. 
@@ -55,6 +94,11 @@ The application then displays relevant information for each thread, including:
 2. Open your web browser and navigate to the provided local address (usually `http://127.0.0.1:8000`).
 3. Enter the name of the subreddit you want to search for in the input field and click the "Search" button.
 4. The top 10 threads from the specified subreddit will be displayed with their relevant information.
+
+### Loading Test
+<a id="loading-test"></a>
+Successfully conducted a Loading Test for the designed API using Locust. Results are as follows for # peak concurrency 20 and Spawn Rate 5, RPS -> 10.1 : 
+![LoadTestingLocust](https://github.com/progspac-vnn/RedditWrapperWebApp/assets/83080783/14201af6-ddee-4d93-996e-8b422d3a0e09)
 
 ## Dependencies
 The project relies on the following external packages, which are listed in `requirements.txt`:
