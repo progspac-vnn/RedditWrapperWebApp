@@ -7,11 +7,13 @@ import praw
 from django.conf import settings
 import re
 
+# Loader Testing
+
 class RedditAPIView(APIView):
-    def get(self, request):
+    def get(self, request, sub):
 
         try:
-            subreddit_name = request.GET.get('subreddit')
+            subreddit_name = sub
             print("Subreddit Name:", subreddit_name)
             # API credentials
             reddit = praw.Reddit(

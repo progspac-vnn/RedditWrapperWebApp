@@ -119,7 +119,7 @@
 
             
             try{
-                fetch(`http://127.0.0.1:8000/api/reddit/view/?subreddit=${subredditName}`)  // Replace with your API endpoint URL
+                fetch(`http://127.0.0.1:8000/api/reddit/view/`+subredditName)  // Replace with your API endpoint URL
                     .then(response => response.json())
                     .then(data => {
                         // Display the fetched data
