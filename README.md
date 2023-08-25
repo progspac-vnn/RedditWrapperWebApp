@@ -10,7 +10,7 @@ The application fetches data using the Reddit API and displays relevant informat
 - [Search and Display](#search-and-display)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Loading_Test](#loading_test)
+- [Loading Test](#loading-test)
 - [Dependencies](#dependencies)
 - [Contact](#contact)
 
