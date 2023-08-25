@@ -19,8 +19,8 @@ class RedditAPIView(APIView):
             reddit = praw.Reddit(
                 client_id = settings.REDDIT_CLIENT_ID,
                 client_secret = settings.REDDIT_CLIENT_SECRET,
-                username='USERNAME',
-                password='PASSWORD',
+                username='progspac-vnn',
+                password='Vinesh@2703',
                 user_agent = 'test-api', # app name
             )
 
