@@ -102,22 +102,25 @@ Successfully conducted a Loading Test for the designed API using Locust. Results
 
 ## Dependencies
 The project relies on the following external packages, which are listed in `requirements.txt`:
-- asgiref
-- certifi
-- charset-normalizer
-- Django
-- djangorestframework
-- praw
-- prawcore
-- python-dotenv
-- pytz
-- requests
-- soupsieve
-- sqlparse
-- typing_extensions
-- tzdata
-- update-checker
-- urllib3
+- asgiref==3.7.2
+- certifi==2023.7.22
+- charset-normalizer==3.2.0
+- click==8.1.7
+- colorama==0.4.6
+- Django==3.2.20
+- djangorestframework==3.14.0
+- praw==7.7.1
+- prawcore==2.3.0
+- python-dotenv==0.21.1
+- pytz==2023.3
+- requests==2.31.0
+- sqlparse==0.4.4
+- typing_extensions==4.7.1
+- tzdata==2023.3
+- update-checker==0.18.0
+- urllib3==2.0.4
+- gunicorn==21.2.0(For Deployment)
+- locust==2.16.1(For Load Testing)
 
 Make sure you have these dependencies installed before running the application.
 
