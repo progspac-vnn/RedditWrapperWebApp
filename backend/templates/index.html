@@ -5,17 +5,17 @@
     <style>
 
         .post-card {
-            /* ... other styles ... */
-            max-width: 300px; /* Limit the maximum width of the card */
-            overflow: hidden; /* Hide any overflow content */
-            text-align: left; /* Align the content to the left */
+           
+            max-width: 300px; 
+            overflow: hidden; 
+            text-align: left;
         }
 
         .post-link {
             color: blue;
             text-decoration: none;
-            display: block; /* Display the link as a block element */
-            margin-top: 10px; /* Add some margin for spacing */
+            display: block; 
+            margin-top: 10px; 
         }
 
 
@@ -24,9 +24,9 @@
                 top: 0;
                 left: 0;
                 width: 100%;
-                background-color: white; /* Set background color as needed */
-                padding: 20px; /* Adjust padding as needed */
-                z-index: 50; /* Higher value to keep it above other content */
+                background-color: white; 
+                padding: 20px;
+                z-index: 50;
             }
 
         .post-card {
@@ -60,14 +60,14 @@
         }
 
         .content-preview {
-            max-height: 100px; /* Adjust the value as needed */
+            max-height: 100px; 
             overflow: hidden;
             text-overflow: ellipsis;
             white-space: normal;
         }
 
         .full-content {
-            max-height: 200px; /* Adjust the value as needed */
+            max-height: 200px; 
             overflow: hidden;
             text-overflow: ellipsis;
             white-space: normal;
@@ -92,8 +92,7 @@
     <!-- search box -->
     <div id="search-and-posts" style="background-color:  rgb(90, 99, 99);">
 
-        <!-- Search box ... -->
-        <div style="text-align: center;">
+            <div style="text-align: center;">
             <input type="text" id="subreddit-search" placeholder="Enter subreddit name" />
             <button id="search-button">Search</button>
             
@@ -119,7 +118,7 @@
 
             
             try{
-                fetch(`https://reddit-web-wrapper.onrender.com/api/reddit/view/`+subredditName)  // Replace with your API endpoint URL
+                fetch(`http://127.0.0.1:8000/api/reddit/view/`+subredditName)  
                     .then(response => response.json())
                     .then(data => {
                         // Display the fetched data
