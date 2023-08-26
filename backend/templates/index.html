@@ -118,7 +118,7 @@
 
             
             try{
-                fetch(`https://reddit-web-wrapper.onrender.com/api/reddit/view/`+subredditName)  
+                fetch(`http://127.0.0.1:8000/api/reddit/view/`+subredditName)  
                     .then(response => response.json())
                     .then(data => {
                         // Display the fetched data
