@@ -31,7 +31,7 @@ Users can search for a subreddit by entering its name and clicking the search bu
 # When 'Read on Reddit' is clicked it is redirected to reddit.com where this post is available
 ![OnClickRedirectsToRedditWebsite](https://github.com/progspac-vnn/RedditWrapperWebApp/assets/83080783/9a075fe7-b1c3-4caf-88cc-8637ded126dd)
 
-## Features
+### Features
 Reddit WebPage Crawler allows users to effortlessly search for their desired subreddit and instantly access the top 10 hot threads within that subreddit. This feature enables users to explore trending discussions and valuable content from various communities.
 
 # Seamless Integration with Reddit API
