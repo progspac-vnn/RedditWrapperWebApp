@@ -31,21 +31,17 @@ Users can search for a subreddit by entering its name and clicking the search bu
 # When 'Read on Reddit' is clicked it is redirected to reddit.com where this post is available
 ![OnClickRedirectsToRedditWebsite](https://github.com/progspac-vnn/RedditWrapperWebApp/assets/83080783/9a075fe7-b1c3-4caf-88cc-8637ded126dd)
 
-### Features
+## Features
 Reddit WebPage Crawler allows users to effortlessly search for their desired subreddit and instantly access the top 10 hot threads within that subreddit. This feature enables users to explore trending discussions and valuable content from various communities.
-
 # Seamless Integration with Reddit API
 Reddit WebPage Crawler seamlessly integrates with the Reddit API through the praw library. This integration ensures accurate and up-to-date data retrieval, empowering users to stay informed about the latest and most popular discussions within their chosen subreddits.
 
 # Cached Data for Swift Retrieval
 To optimize user experience and expedite search results, Reddit WebPage Crawler employs a caching mechanism. Searched subreddit data is intelligently cached, allowing subsequent searches to retrieve information swiftly without redundant API calls. This caching strategy not only reduces load times but also conserves server resources, ensuring that users receive the latest threads promptly while benefiting from enhanced performance.
-
 By intelligently storing and retrieving data from cache, the application minimizes latency and provides users with a seamless browsing experience. This feature enhances the overall efficiency of the application, making exploration of top threads from various subreddits both swift and effortless.
 
 # Easy Installation and Configuration
 The installation process for Reddit WebPage Crawler is straightforward. The provided instructions guide users through the process of setting up the project, installing dependencies, and configuring Reddit API credentials. This simplicity allows users to quickly set up the application and start exploring top threads.
-
-Feel free to explore the project's functionality and interface, and do not hesitate to reach out if you have any inquiries or suggestions for improvement. Your feedback is highly valued and contributes to the ongoing enhancement of the Reddit WebPage Crawler.
 
 ### Search and Display
 Users can enter the name of a subreddit in the search box and click the search button to retrieve the top 10 threads from that subreddit. 
