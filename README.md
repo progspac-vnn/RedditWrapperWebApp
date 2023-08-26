@@ -45,9 +45,6 @@ By intelligently storing and retrieving data from cache, the application minimiz
 # Easy Installation and Configuration
 The installation process for Reddit WebPage Crawler is straightforward. The provided instructions guide users through the process of setting up the project, installing dependencies, and configuring Reddit API credentials. This simplicity allows users to quickly set up the application and start exploring top threads.
 
-# Contact and Feedback
-Reddit WebPage Crawler welcomes user engagement and feedback. The "Contact" section provides users with the means to reach out to the project maintainer, Vinesh Narayan Nadar, for questions, suggestions, or any assistance needed. This proactive approach encourages a sense of community and collaboration.
-
 Feel free to explore the project's functionality and interface, and do not hesitate to reach out if you have any inquiries or suggestions for improvement. Your feedback is highly valued and contributes to the ongoing enhancement of the Reddit WebPage Crawler.
 
 ### Search and Display
